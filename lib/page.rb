@@ -37,9 +37,4 @@ class Page
 		"Header: #{@header}\nTime: #{@timestamp}\nArticle: #{@article}"
 	end
 
-	def new(entry)
-	end
-
 end
-
-
