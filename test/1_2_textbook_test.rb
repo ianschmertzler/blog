@@ -47,7 +47,6 @@ class TextbookTest < Minitest::Test
     textbook = Textbook.new(file_as_storage)
     textbook.insert(page)
     textbook.insert(page2)
-
     expected = "Header: #{expected_data["header"]}\nTime: #{expected_data["timestamp"]}\nArticle: #{expected_data["article"]}\nHeader: #{second_expected_data["header"]}\nTime: #{second_expected_data["timestamp"]}\nArticle: #{second_expected_data["article"]}"
     actual = textbook.to_s
 
